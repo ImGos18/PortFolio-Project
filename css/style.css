@@ -1,0 +1,382 @@
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #fafafa;
+}
+
+body,
+html {
+  background-color: #0d0d0d;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0;
+}
+
+/* Clases de ayuda */
+
+.logo-lg {
+  font-size: 2rem;
+}
+
+.margin-md {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilios Header */
+
+.header-barra {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15%;
+  background-color: #0a0c0e;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-barra .logo {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-bars ul {
+  display: flex;
+}
+
+.nav-bars li {
+  list-style: none;
+  display: block;
+  margin: 20px 20px;
+}
+
+.nav-bars a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+/* Estilos Presentacion */
+
+.presentacion {
+  background-image: url("../img/wallhaven-yq769k_3840x2160.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  height: calc(100vh);
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.titulo-presentacion {
+  color: #fafafa;
+  margin-top: -10%;
+  margin-bottom: 2%;
+}
+
+.texto-presentacion {
+  color: #fafafa;
+  width: 30vw;
+}
+
+.lista-resumen {
+  color: #fafafa;
+  list-style: none;
+  display: flex;
+  margin-top: 5%;
+}
+
+.item-resumen {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: rgba(0, 0, 0, 0) 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #262626;
+}
+
+/* Estilos informacion laboral */
+
+.experiencia-laboral {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.intro-experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.descripcion-experiencia {
+  width: 40vw;
+  display: inline-block;
+}
+
+.contenedor-info-profesional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 100%;
+  justify-items: center;
+}
+
+.trabajos-previos {
+  width: 60%;
+  padding-left: 0%;
+}
+
+.resumen-trabajos {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resumen-trabajos li {
+  display: block;
+  background-color: #0a0a0a;
+  width: 100%;
+  border: 1px solid #262626;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contenedor-trabajo,
+.contenedor-estudio {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.contenedor-estudio {
+  width: 70%;
+  border: 1px solid #262626;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.contenedor-trabajo h2,
+.contenedor-estudio h2 {
+  margin-bottom: 0;
+}
+
+.empresa-tiempo,
+.escuela-tiempo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.empresa-tiempo span,
+.escuela-tiempo span {
+  color: gray;
+}
+
+.fecha {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.fecha i {
+  font-size: 1.2rem;
+}
+
+.fecha p {
+  margin-left: 5px;
+}
+
+.ubicacion {
+  align-self: self-end;
+}
+
+.educacion {
+  justify-self: start;
+}
+
+.educacion i {
+  display: block;
+}
+
+.lenguajes ul,
+.consolas ul,
+.motos ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.lista-lenguajes,
+.lista-consolas,
+.lista-moto {
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.nombre-lenguaje,
+.nombre-consola,
+.nombre-moto {
+  margin-right: 20px;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.descarga-cv {
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+}
+
+.proyectos-cualidades {
+  margin-top: 2rem;
+  width: 50vw;
+  grid-column: span 2;
+}
+
+.lista-cualidades {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  gap: 10%;
+}
+
+.item-cualidades {
+  background-color: #0a0a0a;
+  border: 1px solid #262626;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.item-cualidades h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  justify-self: center;
+}
+
+/* Gaming */
+
+.gaming-contenedor {
+  width: 80%;
+  justify-self: center;
+  margin-left: 10%;
+}
+
+.gaming {
+  background-color: #0a0a0a;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8rem;
+  width: 100%;
+}
+
+.gaming-descripcion i {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.gaming-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.gaming-image .img-element {
+  width: 80%;
+  border-radius: 20px;
+}
+
+/* motociclismo */
+.moto-contenedor {
+  width: 80%;
+  justify-self: center;
+  margin-left: 5%;
+  margin-right: 20%;
+}
+
+.motociclismo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 8rem;
+  width: 100%;
+}
+
+.moto-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+}
+
+.moto-descripcion i {
+  display: inline-block;
+  margin-bottom: 2rem;
+  align-self: end;
+}
+
+.moto-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.moto-image .img-element {
+  width: 60%;
+  border-radius: 20px;
+}
+
+/* Contacto */
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0a0a;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.lista-contacto {
+  list-style: none;
+  display: flex;
+}
+
+.contacto-item {
+  margin-left: 3rem;
+  border: 1px solid #262626;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* Footer */
+.pie-de-pagina {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #262626;
+}
