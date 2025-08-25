@@ -365,6 +365,10 @@ main {
   display: flex;
 }
 
+.lista-contacto a {
+  text-decoration: none;
+}
+
 .contacto-item {
   margin-left: 3rem;
   border: 1px solid #262626;
