@@ -13,7 +13,6 @@
 body,
 html {
   background-color: #0d0d0d;
-  overflow-x: hidden;
 }
 
 main {
@@ -231,6 +230,8 @@ main {
   list-style: none;
   margin-top: 5%;
   margin-bottom: 10%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nombre-lenguaje,
@@ -249,9 +250,13 @@ main {
   display: flex;
 }
 
+.descarga-cv button {
+  flex-basis: 100%;
+}
+
 .proyectos-cualidades {
   margin-top: 2rem;
-  width: 50vw;
+  width: 100vw;
   grid-column: span 2;
 }
 
@@ -259,7 +264,8 @@ main {
   display: flex;
   list-style: none;
   padding-left: 0;
-  gap: 10%;
+  gap: 5%;
+  justify-content: space-around;
 }
 
 .item-cualidades {
@@ -270,6 +276,7 @@ main {
   align-content: center;
   border-radius: 10px;
   padding: 20px;
+  width: 20%;
 }
 
 .item-cualidades h2 {
@@ -383,4 +390,163 @@ main {
   justify-content: center;
   align-items: center;
   border-top: 1px solid #262626;
+}
+
+/* media querys telfono y trablet */
+
+@media screen and (max-width: 834px) {
+  /* header */
+
+  /* Seccion de presentacion */
+
+  .presentacion {
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  .titulo-presentacion {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .texto-presentacion {
+    margin-top: 5%;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .lista-resumen {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .lista-resumen:last-child {
+    flex-basis: 100%;
+  }
+
+  /* info profesional */
+
+  .descripcion-experiencia {
+    margin-top: 5%;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+  }
+
+  .contenedor-info-profesional {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trabajos-previos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .resumen-trabajos li {
+    width: 100vw;
+  }
+
+  .contenedor-estudio {
+    width: 100%;
+    align-self: center;
+  }
+
+  .lenguajes {
+    padding-left: 5%;
+  }
+
+  .lista-lenguajes {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .educacion {
+    width: 100%;
+  }
+
+  .educacion i {
+    justify-self: center;
+  }
+
+  .descarga-cv {
+    justify-self: center;
+  }
+
+  .descarga-cv button {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  .lista-cualidades {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item-cualidades {
+    width: 100vw;
+  }
+
+  /* gaming */
+
+  .gaming {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .gaming-descripcion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gaming i {
+    align-self: center;
+  }
+
+  .lista-consolas {
+    flex-wrap: wrap;
+  }
+
+  /* Motociclismo */
+  .motociclismo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+  }
+
+  .moto-contenedor {
+    width: 90%;
+  }
+
+  .moto-descripcion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .moto-descripcion i {
+    align-self: center;
+  }
+
+  .lista-moto {
+    flex-wrap: wrap;
+  }
+
+  /* Contacto */
+  .contacto {
+    text-align: center;
+  }
+
+  .lista-contacto {
+    padding: 0;
+    gap: 15px;
+  }
+
+  .lista-contacto li {
+    margin: 0;
+  }
 }
