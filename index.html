@@ -36,31 +36,70 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Gsoler Dev</title>
   </head>
-  <body>
+  <body id="body">
     <header class="header-barra">
-      <a href="#presentacion"
-        ><img src="img/pagina-logo2.png" alt="logo de pagina" class="logo"
-      /></a>
+      <!-- nav -->
+      <nav
+        class="navbar navbar-dark nav-bars fixed-top navbar-expand-lg"
+        style="background-color: #0a0a0a"
+        id="contenedor-barra"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#presentacion"
+            ><img src="img/pagina-logo2.png" alt="logo de pagina" class="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                <a href="#presentacion"> Gsoler.Dev </a>
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item boton-seccion">
+                  <a href="#experiencia-laboral"
+                    ><i class="bi bi-suitcase-lg"></i> Experiencia y CV</a
+                  >
+                </li>
+                <li class="nav-item boton-seccion">
+                  <a href="#gaming"><i class="bi bi-controller"></i> Gaming</a>
+                </li>
+                <li class="nav-item boton-seccion">
+                  <a href="#motociclismo">
+                    <i class="fa-solid fa-motorcycle"></i> Motociclismo</a
+                  >
+                </li>
 
-      <nav class="nav-bars">
-        <ul class="lista-navegacion">
-          <li class="boton-seccion">
-            <a href="#experiencia-laboral"
-              ><i class="bi bi-suitcase-lg"></i> Experiencia y CV</a
-            >
-          </li>
-          <li class="boton-seccion">
-            <a href="#gaming"><i class="bi bi-controller"></i> Gaming</a>
-          </li>
-          <li class="boton-seccion">
-            <a href="#motociclismo">
-              <i class="fa-solid fa-motorcycle"></i> Motociclismo</a
-            >
-          </li>
-          <li class="boton-seccion">
-            <a href="#contacto"><i class="bi bi-envelope"></i> Contacto</a>
-          </li>
-        </ul>
+                <li class="nav-item boton-seccion">
+                  <a href="#contacto"
+                    ><i class="bi bi-envelope"></i> Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -224,7 +263,7 @@
                 </p>
               </div>
               <div class="ubicacion">
-                <i class="bi bi-geo-alt"></i> Carrera Remota, Web
+                <i class="bi bi-geo-alt"></i> Carrera Remota
               </div>
             </div>
 
@@ -364,5 +403,49 @@
         preciso de mi perfil profesional y personal. aun en desarrollo
       </p>
     </footer>
+    <!-- script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const cerrarNav = function () {
+        const menu = document.getElementById("offcanvasDarkNavbar");
+        const menuInstancia = bootstrap.Offcanvas.getOrCreateInstance(menu);
+        console.log(menuInstancia);
+
+        menuInstancia.hide();
+      };
+
+      document.querySelectorAll(".offcanvas-end li").forEach((link) => {
+        link.addEventListener("click", cerrarNav);
+      });
+      document
+        .getElementById("offcanvasDarkNavbarLabel")
+        .addEventListener("click", cerrarNav);
+    </script>
   </body>
 </html>
+
+<!-- nav antigua -->
+<!-- <nav class="nav-bars navbar navbar-expand-md">
+        <ul class="lista-navegacion navbar-nav me-auto">
+          <li class="boton-seccion nav-item">
+            <a href="#experiencia-laboral"
+              ><i class="bi bi-suitcase-lg"></i> Experiencia y CV</a
+            >
+          </li>
+          <li class="boton-seccion nav-item">
+            <a href="#gaming"><i class="bi bi-controller"></i> Gaming</a>
+          </li>
+          <li class="boton-seccion nav-item">
+            <a href="#motociclismo">
+              <i class="fa-solid fa-motorcycle"></i> Motociclismo</a
+            >
+          </li>
+          <li class="boton-seccion nav-item">
+            <a href="#contacto"><i class="bi bi-envelope"></i> Contacto</a>
+          </li>
+        </ul>
+      </nav> -->
