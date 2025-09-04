@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sansation", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
@@ -95,7 +95,7 @@ main {
 
 .texto-presentacion {
   color: #fafafa;
-  width: 30vw;
+  width: 50vw;
 }
 
 .lista-resumen {
@@ -134,7 +134,7 @@ main {
 }
 
 .descripcion-experiencia {
-  width: 40vw;
+  width: 50vw;
   display: inline-block;
 }
 
@@ -147,13 +147,16 @@ main {
 }
 
 .trabajos-previos {
-  width: 60%;
+  width: 80%;
   padding-left: 0%;
+  min-height: 0;
 }
 
 .resumen-trabajos {
   list-style: none;
   padding-left: 0;
+  overflow-y: scroll;
+  max-height: 700px;
 }
 
 .resumen-trabajos li {
@@ -169,13 +172,34 @@ main {
 .contenedor-trabajo,
 .contenedor-estudio {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+  gap: 30px;
   width: 100%;
   padding-top: 15px;
 }
 
+.contenedor-trabajo.proyecto {
+}
+
+.proyecto-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.descripcion-proyecto p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.ir-sitio a,
+.ir-sitio i {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 .contenedor-estudio {
-  width: 70%;
+  width: 90%;
   border: 1px solid #262626;
   border-radius: 15px;
   padding: 20px;
@@ -188,9 +212,10 @@ main {
 
 .empresa-tiempo,
 .escuela-tiempo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 1;
 }
 
 .empresa-tiempo span,
@@ -198,9 +223,13 @@ main {
   color: gray;
 }
 
+.descripcion-labores {
+  min-height: 0;
+}
+
 .fecha {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding-right: 20px;
 }
 
@@ -210,6 +239,8 @@ main {
 
 .fecha p {
   margin-left: 5px;
+  align-self: center;
+  margin-bottom: 0;
 }
 
 .ubicacion {
@@ -255,8 +286,9 @@ main {
 
 .descarga-cv {
   margin-top: 50px;
-  width: 70%;
+  width: 90%;
   display: flex;
+  text-decoration: none;
 }
 
 .descarga-cv button {
@@ -270,11 +302,14 @@ main {
 }
 
 .lista-cualidades {
-  display: flex;
+  display: grid;
   list-style: none;
   padding-left: 0;
-  gap: 5%;
+  grid-template-columns: auto auto auto;
   justify-content: space-around;
+  gap: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .item-cualidades {
@@ -285,7 +320,7 @@ main {
   align-content: center;
   border-radius: 10px;
   padding: 20px;
-  width: 20%;
+  width: 100%;
 }
 
 .item-cualidades h2 {
@@ -306,7 +341,7 @@ main {
   background-color: #0a0a0a;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 8rem;
+  padding-top: rem;
   width: 100%;
 }
 
@@ -346,6 +381,8 @@ main {
   display: flex;
   flex-direction: column;
   align-content: end;
+  height: 100%;
+  gap: 10%;
 }
 
 .moto-descripcion i {
@@ -403,7 +440,7 @@ main {
 
 /* media querys telfono y trablet */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 990px) {
   /* header */
 
   /* Seccion de presentacion */
@@ -420,7 +457,7 @@ main {
 
   .texto-presentacion {
     margin-top: 5%;
-    width: 100%;
+    width: 90%;
     padding: 0px 10px 0px 10px;
   }
 
@@ -454,6 +491,14 @@ main {
     justify-items: center;
     align-items: center;
     width: 100%;
+  }
+  .proyecto-img {
+    width: 90%;
+    border-radius: 20px;
+  }
+  .resumen-trabajos {
+    overflow-y: visible;
+    max-height: 100%;
   }
 
   .resumen-trabajos li {
@@ -492,8 +537,10 @@ main {
   }
 
   .lista-cualidades {
+    display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0;
   }
 
   .item-cualidades {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-overlayscrollbars-initialize>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,11 @@
     <link rel="icon" href="img/pagina-logo2.png" type="image/png" />
 
     <!-- Fuentes -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -34,13 +35,22 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- scrollvbar -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/overlayscrollbars/styles/overlayscrollbars.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars/browser/overlayscrollbars.browser.es6.min.js"></script>
+
+    <script></script>
     <title>Gsoler Dev</title>
   </head>
-  <body id="body">
-    <header class="header-barra">
+  <body id="body" data-overlayscrollbars-initialize>
+    <header class="header-barra fixed-top nav-bars" id="header-barra">
       <!-- nav -->
       <nav
-        class="navbar navbar-dark nav-bars fixed-top navbar-expand-lg"
+        class="navbar navbar-dark fixed-top navbar-expand-lg"
         style="background-color: #0a0a0a"
         id="contenedor-barra"
       >
@@ -105,14 +115,17 @@
     <main>
       <section class="presentacion" id="presentacion">
         <h1 class="titulo-presentacion">
-          Gustavo Soler:Desarrollador Full-Stack
+          Gustavo Soler: Desarrollador Front-End
         </h1>
         <p class="texto-presentacion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem unde eos eligendi saepe labore ipsam dignissimos
-          praesentium eum consequatur delectus iure accusamus at facere earum
-          hic magni, debitis excepturi! Quod? Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Neque eveniet possimus
+          Soy un desarrollador front-end freelance con conocimientos en
+          frameworks y código HTML y CSS para crear sitios web desde cero. Me
+          dedico al desarrollo web de manera part-time ya que mi trabajo
+          principal es de técnico en telecomunicaciones especializado en fibra
+          óptica, CCTV, cableado estructurado y armado de racks para
+          DataCenters. En mis tiempos libres se los dedico al motociclismo y los
+          videojuegos, dos hobbies que se compenetran mucho con el trabajo de
+          desarrollador front-end.
         </p>
         <div class="iconos">
           <ul class="lista-resumen">
@@ -130,32 +143,82 @@
         <div class="intro-experiencia">
           <i class="bi bi-suitcase-lg logo-lg"></i>
           <p class="descripcion-experiencia">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-            commodi placeat, a animi natus atque,
+            en este apartado pueden encontrar mis proyectos realizados como
+            desarrollador front end, asi tambien como un resumen de los
+            lenguajes y herramientas que manejo y la opcion para descargar mi CV
+            actualizado
           </p>
         </div>
         <div class="contenedor-info-profesional">
           <div class="trabajos-previos">
             <i class="bi bi-suitcase-lg logo-lg"></i>
-            <ul class="resumen-trabajos">
+            <ul
+              class="resumen-trabajos"
+              id="lista-trabajos"
+              data-overlayscrollbars-initialize
+            >
+              <li>
+                <div class="contenedor-trabajo proyecto">
+                  <div class="proyecto text-center">
+                    <img
+                      src="img/omnifood-thumb.png"
+                      alt=""
+                      class="proyecto-img"
+                    />
+                  </div>
+                  <div class="descripcion-proyecto text-center">
+                    <p>Proyecto ommnfood</p>
+                  </div>
+                  <a
+                    href="https://ommni-food-project.vercel.app"
+                    target="_blank"
+                    class="ir-sitio btn btn-light"
+                  >
+                    <i class="bi bi-link"></i> Ir al sitio
+                  </a>
+                </div>
+              </li>
               <li>
                 <div class="contenedor-trabajo">
                   <div class="empresa-tiempo">
-                    <h2>Fullstack developer</h2>
+                    <h2>Tecnico en telecomunicaciones: minería</h2>
                     <div class="fecha">
                       <i class="bi bi-calendar"></i>
-                      <p>2022- Actual</p>
+                      <p>Mar 2023 - Actualidad</p>
                     </div>
-                    <span>Ficom SpA</span>
+                    <span>Gnosys SpA / Asap / ACT</span>
                   </div>
                   <div class="descripcion-labores">
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Consequatur, cupiditate beatae dolores voluptatum optio
-                      error itaque iste sunt similique nisi tempora fugiat
-                      exercitationem pariatur ducimus nobis accusamus ab rerum
-                      fugit.
+                      Desde el año 2023 me desempeño como técnico en
+                      telecomunicaciones para diferentes proyectos en el área
+                      norte de Chile, siempre realizando mis labores en el área
+                      de fibra óptica y cableado de red, trabajando en Quebrada
+                      Blanca (área concentradora) y Minera Escondida (área
+                      planta).
+                    </p>
+                  </div>
+                  <div class="ubicacion">
+                    <i class="bi bi-geo-alt"></i>Zona norte de chile
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="contenedor-trabajo">
+                  <div class="empresa-tiempo">
+                    <h2>Tecnico en telecomunicaciones</h2>
+                    <div class="fecha">
+                      <i class="bi bi-calendar"></i>
+                      <p>Sep 2022 -Mar 2023</p>
+                    </div>
+                    <span>GANTEC</span>
+                  </div>
+                  <div class="descripcion-labores">
+                    <p>
+                      Trabajo de cableado estructurado enfocado a implementar
+                      infraestructura de red para la bodega de Stanley/Black &
+                      decker ubicada en el parque de bodegas Bodenor en
+                      pudahuel, Santiago
                     </p>
                   </div>
                   <div class="ubicacion">
@@ -166,48 +229,22 @@
               <li>
                 <div class="contenedor-trabajo">
                   <div class="empresa-tiempo">
-                    <h2>Jefe TI</h2>
+                    <h2>Tecnico en telecomunicaciones</h2>
                     <div class="fecha">
                       <i class="bi bi-calendar"></i>
-                      <p>2020-2022</p>
+                      <p>Ene 2022 - Sep 2022</p>
                     </div>
-                    <span>Videocorp SpA</span>
+                    <span>Site Chile</span>
                   </div>
                   <div class="descripcion-labores">
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Consequatur, cupiditate beatae dolores voluptatum optio
-                      error itaque iste sunt similique nisi tempora fugiat
-                      exercitationem pariatur ducimus nobis accusamus ab rerum
-                      fugit.
+                      Tendido de Cables coaxiales y fibra optica para edificios
+                      residenciales bajo la norma de ley de ductos publicada en
+                      enero de 2015
                     </p>
                   </div>
                   <div class="ubicacion">
-                    <i class="bi bi-geo-alt"></i> Sab pedro de atacama, Chile
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contenedor-trabajo">
-                  <div class="empresa-tiempo">
-                    <h2>Junior developer</h2>
-                    <div class="fecha">
-                      <i class="bi bi-calendar"></i>
-                      <p>2019-2020</p>
-                    </div>
-                    <span>Gasco SA</span>
-                  </div>
-                  <div class="descripcion-labores">
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Consequatur, cupiditate beatae dolores voluptatum optio
-                      error itaque iste sunt similique nisi tempora fugiat
-                      exercitationem pariatur ducimus nobis accusamus ab rerum
-                      fugit.
-                    </p>
-                  </div>
-                  <div class="ubicacion">
-                    <i class="bi bi-geo-alt"></i> Antofagasta, Chile
+                    <i class="bi bi-geo-alt"></i> Santiago, Chile
                   </div>
                 </div>
               </li>
@@ -217,31 +254,13 @@
             <i class="bi bi-code-slash logo-lg"></i>
             <div class="lenguajes">
               <ul class="lista-lenguajes">
-                <li class="nombre-lenguaje">React</li>
-                <li class="nombre-lenguaje">TypeScript</li>
-                <li class="nombre-lenguaje">Next.Js</li>
-                <li class="nombre-lenguaje">Vue.js</li>
-                <li class="nombre-lenguaje">Tailwind CSS</li>
-                <li class="nombre-lenguaje">HTML5</li>
-                <li class="nombre-lenguaje">CSS3</li>
-              </ul>
-              <ul class="lista-lenguajes">
-                <li class="nombre-lenguaje">Node.Js</li>
-                <li class="nombre-lenguaje">Python</li>
-                <li class="nombre-lenguaje">Express.js</li>
-                <li class="nombre-lenguaje">PostgreSQL</li>
-                <li class="nombre-lenguaje">MongoDB</li>
-                <li class="nombre-lenguaje">REST APIs</li>
-                <li class="nombre-lenguaje">GraphQL</li>
-              </ul>
-              <ul class="lista-lenguajes">
+                <li class="nombre-lenguaje">HTML</li>
+                <li class="nombre-lenguaje">CSS</li>
+                <li class="nombre-lenguaje">Bootstrap</li>
+                <li class="nombre-lenguaje">Javascript</li>
+                <li class="nombre-lenguaje">Sass</li>
                 <li class="nombre-lenguaje">Git</li>
-                <li class="nombre-lenguaje">Docker</li>
-                <li class="nombre-lenguaje">AWS</li>
-                <li class="nombre-lenguaje">Vercel</li>
-                <li class="nombre-lenguaje">Jest</li>
-                <li class="nombre-lenguaje">Figma</li>
-                <li class="nombre-lenguaje">Agile</li>
+                <li class="nombre-lenguaje">Github</li>
               </ul>
             </div>
             <i class="bi bi-mortarboard logo-lg margin-md"></i>
@@ -250,16 +269,17 @@
                 <h2>Desarrollo Fullstack</h2>
                 <div class="fecha">
                   <i class="bi bi-calendar"></i>
-                  <p>2019-2025</p>
+                  <p>Cursando actualmente</p>
                 </div>
                 <span>Coderhouse</span>
               </div>
               <div class="descripcion-carrera">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Consequatur, cupiditate beatae dolores voluptatum optio error
-                  itaque iste sunt similique nisi tempora fugiat exercitationem
-                  pariatur ducimus nobis accusamus ab rerum fugit.
+                  Curso de desarrollo Web Fullstack con enfoque al desarollo de
+                  aplicaciones completas utilizando Javascript y los frameworks
+                  actuales para este lenguaje con modulos dedicados al Backend
+                  para desarollar aplicaciones solidad implementando buenas
+                  practicas y estructura escalable
                 </p>
               </div>
               <div class="ubicacion">
@@ -267,7 +287,11 @@
               </div>
             </div>
 
-            <div class="descarga-cv">
+            <a
+              class="descarga-cv"
+              href="recursos/pdf/Curriculum Gustavo Soler.pdf"
+              download
+            >
               <button type="button" class="btn btn-light">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -286,29 +310,31 @@
                 </svg>
                 Descargar CV
               </button>
-            </div>
+            </a>
           </div>
+
           <div class="proyectos-cualidades">
             <ul class="lista-cualidades">
               <li class="item-cualidades">
-                <h2>+50 proyectos</h2>
+                <h2>Siempre Desarrollando</h2>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Numquam rem molestias voluptatem in
+                  Constantemente trabajo en proyectos para seguir expandiendo mi
+                  conocimiento en buenas practicas de desarrollo y estar al dia
+                  con los nuevos frameworks
                 </p>
               </li>
               <li class="item-cualidades">
-                <h2>Liderazgo</h2>
+                <h2>Adaptabilidad</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                  et, repellat itaque rerum rem pe
+                  Puedo adaptarme facilmente tanto a nuevos frameworks como a
+                  nuevos equipos de tranajo
                 </p>
               </li>
               <li class="item-cualidades">
-                <h2>Experto en optimizacion</h2>
+                <h2>comprometido calidad</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-                  velit autem repellendus similique qui
+                  Siempre busco obtener la mejor calidad posible en todos mis
+                  proyectos, tanto en el tema visual como en el tema tecnico
                 </p>
               </li>
             </ul>
@@ -320,12 +346,13 @@
           <div class="gaming-descripcion">
             <i class="bi bi-controller" style="font-size: 4rem"></i>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              quidem vitae delectus aspernatur. A voluptatum perferendis velit
-              neque. Soluta unde eos porro perferendis rerum. Recusandae nisi
-              error repellat repellendus consectetur?
+              Los videojuegos son un medio excelente para desarrollar la
+              capacidad de resolución de problemas y, según el tipo de juego,
+              para aprender a comunicarse mejor y trabajar en equipo; cualidades
+              que son fundamentales a la hora de desempeñarse como
+              desarrollador.
             </p>
-            <div class="consolas">
+            <div class="consolas" style="display: none">
               <ul class="lista-consolas">
                 <li class="nombre-consola">PC</li>
                 <li class="nombre-consola">PlayStation 5</li>
@@ -353,12 +380,12 @@
           <div class="moto-descripcion">
             <i class="fa-solid fa-motorcycle" style="font-size: 4rem"></i>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
-              quidem vitae delectus aspernatur. A voluptatum perferendis velit
-              neque. Soluta unde eos porro perferendis rerum. Recusandae nisi
-              error repellat repellendus consectetur?
+              El motociclismo ayuda a mejorar la concentración, la rapidez para
+              resolver problemas y crea un sentimiento de comunidad. También
+              enseña a ser responsable y a trabajar en conjunto, habilidades que
+              son muy útiles en el mundo del desarrollo.
             </p>
-            <div class="motos">
+            <div class="motos" style="display: none">
               <ul class="lista-moto">
                 <li class="nombre-moto">Racing</li>
                 <li class="nombre-moto">Viajes</li>
@@ -400,52 +427,16 @@
     <footer class="pie-de-pagina">
       <p>
         construido con vision de minimalismo, buscando plasmar un resumen
-        preciso de mi perfil profesional y personal. aun en desarrollo
+        preciso de mi perfil profesional y personal. en constante desarrollo
       </p>
     </footer>
-    <!-- script-->
+    <!-- script de funcionalidades extra-->
+    <script src="js/nav-bar.js"></script>
+    <script src="js/scrollbars.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const cerrarNav = function () {
-        const menu = document.getElementById("offcanvasDarkNavbar");
-        const menuInstancia = bootstrap.Offcanvas.getOrCreateInstance(menu);
-        console.log(menuInstancia);
-
-        menuInstancia.hide();
-      };
-
-      document.querySelectorAll(".offcanvas-end li").forEach((link) => {
-        link.addEventListener("click", cerrarNav);
-      });
-      document
-        .getElementById("offcanvasDarkNavbarLabel")
-        .addEventListener("click", cerrarNav);
-    </script>
   </body>
 </html>
-
-<!-- nav antigua -->
-<!-- <nav class="nav-bars navbar navbar-expand-md">
-        <ul class="lista-navegacion navbar-nav me-auto">
-          <li class="boton-seccion nav-item">
-            <a href="#experiencia-laboral"
-              ><i class="bi bi-suitcase-lg"></i> Experiencia y CV</a
-            >
-          </li>
-          <li class="boton-seccion nav-item">
-            <a href="#gaming"><i class="bi bi-controller"></i> Gaming</a>
-          </li>
-          <li class="boton-seccion nav-item">
-            <a href="#motociclismo">
-              <i class="fa-solid fa-motorcycle"></i> Motociclismo</a
-            >
-          </li>
-          <li class="boton-seccion nav-item">
-            <a href="#contacto"><i class="bi bi-envelope"></i> Contacto</a>
-          </li>
-        </ul>
-      </nav> -->
