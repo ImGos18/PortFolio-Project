@@ -72,7 +72,7 @@ main {
 /* Estilos Presentacion */
 
 .presentacion {
-  background-image: url("../img/wallhaven-yq769k_3840x2160.png");
+  background-image: url("../img/wallhaven-yq769k_1920x1080.png");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   height: calc(100vh);
@@ -541,7 +541,8 @@ main {
   }
 
   .item-cualidades {
-    width: 100vw;
+    width: 90vw;
+    align-self: center;
   }
 
   /* gaming */
@@ -601,5 +602,10 @@ main {
 
   .lista-contacto li {
     margin: 0;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
   }
 }
