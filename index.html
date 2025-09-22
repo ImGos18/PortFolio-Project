@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-overlayscrollbars-initialize>
+<html lang="es" data-overlayscrollbars-initialize>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,11 +43,16 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars/browser/overlayscrollbars.browser.es6.min.js"></script>
 
-    <script></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Gsoler Dev</title>
   </head>
   <body id="body" data-overlayscrollbars-initialize>
-    <header class="header-barra fixed-top nav-bars" id="header-barra">
+    <header
+      class="header-barra nav-bars"
+      id="header-barra"
+      style="background-color: #0a0a0a"
+    >
       <!-- nav -->
       <nav
         class="navbar navbar-dark fixed-top navbar-expand-lg"
@@ -139,7 +144,11 @@
           </ul>
         </div>
       </section>
-      <section class="experiencia-laboral" id="experiencia-laboral">
+      <section
+        class="experiencia-laboral"
+        id="experiencia-laboral"
+        data-aos="fade-up"
+      >
         <div class="intro-experiencia">
           <i class="bi bi-suitcase-lg logo-lg"></i>
           <p class="descripcion-experiencia">
@@ -151,12 +160,36 @@
         </div>
         <div class="contenedor-info-profesional">
           <div class="trabajos-previos">
-            <i class="bi bi-suitcase-lg logo-lg"></i>
+            <div class="icono-descripcion">
+              <i class="bi bi-suitcase-lg logo-lg"></i>
+              <p>Proyectos y experiencia laboral</p>
+            </div>
             <ul
               class="resumen-trabajos"
               id="lista-trabajos"
               data-overlayscrollbars-initialize
             >
+              <li>
+                <div class="contenedor-trabajo proyecto">
+                  <div class="proyecto text-center">
+                    <img
+                      src="img/Captura de pantalla 2025-09-22 141511.png"
+                      alt=""
+                      class="proyecto-img"
+                    />
+                  </div>
+                  <div class="descripcion-proyecto text-center">
+                    <p>Adivina el numero</p>
+                  </div>
+                  <a
+                    href="https://adivina-el-numero-beta.vercel.app"
+                    target="_blank"
+                    class="ir-sitio btn btn-light"
+                  >
+                    <i class="bi bi-link"></i> Ir al sitio
+                  </a>
+                </div>
+              </li>
               <li>
                 <div class="contenedor-trabajo proyecto">
                   <div class="proyecto text-center">
@@ -250,7 +283,10 @@
             </ul>
           </div>
           <div class="educacion">
-            <i class="bi bi-code-slash logo-lg"></i>
+            <div class="icono-descripcion">
+              <i class="bi bi-code-slash logo-lg"></i>
+              <p>Conocimientos</p>
+            </div>
             <div class="lenguajes">
               <ul class="lista-lenguajes">
                 <li class="nombre-lenguaje">HTML</li>
@@ -262,7 +298,10 @@
                 <li class="nombre-lenguaje">Github</li>
               </ul>
             </div>
-            <i class="bi bi-mortarboard logo-lg margin-md"></i>
+            <div class="icono-descripcion margin-md">
+              <i class="bi bi-mortarboard logo-lg"></i>
+              <p>Educación</p>
+            </div>
             <div class="contenedor-estudio">
               <div class="escuela-tiempo">
                 <h2>Desarrollo Fullstack</h2>
@@ -340,7 +379,7 @@
           </div>
         </div>
       </section>
-      <section class="gaming" id="gaming">
+      <section class="gaming" id="gaming" data-aos="fade-up">
         <div class="gaming-contenedor">
           <div class="gaming-descripcion">
             <i class="bi bi-controller" style="font-size: 4rem"></i>
@@ -371,7 +410,7 @@
           />
         </div>
       </section>
-      <section class="motociclismo" id="motociclismo">
+      <section class="motociclismo" id="motociclismo" data-aos="fade-up">
         <div class="moto-image">
           <img src="img/img-moto.jpg" alt="" class="img-element" />
         </div>
@@ -399,7 +438,7 @@
         </div>
       </section>
 
-      <section class="contacto" id="contacto">
+      <section class="contacto" id="contacto" data-aos="fade-up">
         <p>
           Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los
           siguientes enlaces:
@@ -437,5 +476,9 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -38,14 +38,12 @@ main {
   padding: 0px 15%;
   background-color: #0a0c0e;
   align-items: center;
-  position: fixed;
-  top: 0;
   width: 100%;
 }
 
 .header-barra .logo {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
 }
 
 .nav-bars ul {
@@ -56,6 +54,15 @@ main {
   list-style: none;
   display: block;
   margin: 20px 20px;
+  transition: all 600ms ease;
+  cursor: pointer;
+}
+
+.nav-bars li:hover {
+  transform: translateY(-5px);
+  color: #fafafa;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fafafa, 0 0 30px #fafafa,
+    0 0 40px #fafafa;
 }
 
 .nav-bars a {
@@ -89,7 +96,7 @@ main {
 
 .titulo-presentacion {
   color: #fafafa;
-  margin-top: -10%;
+  margin-top: 30px;
   margin-bottom: 2%;
 }
 
@@ -146,6 +153,15 @@ main {
   justify-items: center;
 }
 
+.icono-descripcion {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icono-descripcion p {
+  margin-bottom: 0;
+}
 .trabajos-previos {
   width: 80%;
   padding-left: 0%;
@@ -444,11 +460,10 @@ main {
 
   .presentacion {
     width: 100%;
-    margin-top: 110px;
   }
 
   .titulo-presentacion {
-    margin-top: 0px;
+    margin-top: 100px;
     text-align: center;
   }
 
