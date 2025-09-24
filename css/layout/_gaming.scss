@@ -1,0 +1,28 @@
+@use "../utilidades" as *;
+/*Gaming*/
+.gaming {
+  @include contenedor-2-col($colorListaTrabajos);
+  .gaming-contenedor {
+    @include contenedor-descripcion-icono("left");
+    .gaming-descripcion {
+      i {
+        margin-bottom: 2rem;
+        display: inline-block;
+      }
+      .consolas {
+        .lista-consolas {
+          @include lista-horizontal();
+          .nombre-consola {
+            @include item-lista-horizontal();
+          }
+        }
+      }
+    }
+  }
+  .gaming-image {
+    @include img-seccion-2-col-contenedor();
+    .img-element {
+      @include img-seccion-2-col("80%");
+    }
+  }
+}

@@ -34,7 +34,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> "Esta es la hoja de estilos sin SASS, se mantiene por futuras consultas" -->
 
     <!-- scrollvbar -->
     <link
@@ -48,11 +49,7 @@
     <title>Gsoler Dev</title>
   </head>
   <body id="body" data-overlayscrollbars-initialize>
-    <header
-      class="header-barra nav-bars"
-      id="header-barra"
-      style="background-color: #0a0a0a"
-    >
+    <header class="header-barra nav-bars" id="header-barra">
       <!-- nav -->
       <nav
         class="navbar navbar-dark fixed-top navbar-expand-lg"
@@ -213,7 +210,7 @@
               </li>
               <li>
                 <div class="contenedor-trabajo">
-                  <div class="empresa-tiempo">
+                  <div class="empresa">
                     <h2>Tecnico en telecomunicaciones: minería</h2>
                     <div class="fecha">
                       <i class="bi bi-calendar"></i>
@@ -237,7 +234,7 @@
               </li>
               <li>
                 <div class="contenedor-trabajo">
-                  <div class="empresa-tiempo">
+                  <div class="empresa">
                     <h2>Tecnico en telecomunicaciones</h2>
                     <div class="fecha">
                       <i class="bi bi-calendar"></i>
@@ -260,7 +257,7 @@
               </li>
               <li>
                 <div class="contenedor-trabajo">
-                  <div class="empresa-tiempo">
+                  <div class="empresa">
                     <h2>Tecnico en telecomunicaciones</h2>
                     <div class="fecha">
                       <i class="bi bi-calendar"></i>
@@ -445,20 +442,24 @@
         </p>
 
         <ul class="lista-contacto">
-          <a href="mailto:gustavoesoler0@gmail.com">
-            <li class="contacto-item"><i class="bi bi-envelope"></i> Correo</li>
-          </a>
-          <a href="https://github.com/ImGos18" target="_blank">
-            <li class="contacto-item"><i class="bi bi-github"></i> Github</li>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gustavo-soler-994ba1321"
-            target="_blank"
-          >
-            <li class="contacto-item">
+          <li class="contacto-item">
+            <a href="mailto:gustavoesoler0@gmail.com">
+              <i class="bi bi-envelope"></i> Correo
+            </a>
+          </li>
+          <li class="contacto-item">
+            <a href="https://github.com/ImGos18" target="_blank">
+              <i class="bi bi-github"></i> Github
+            </a>
+          </li>
+          <li class="contacto-item">
+            <a
+              href="https://www.linkedin.com/in/gustavo-soler-994ba1321"
+              target="_blank"
+            >
               <i class="bi bi-linkedin"></i> LinkedIn
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </section>
     </main>

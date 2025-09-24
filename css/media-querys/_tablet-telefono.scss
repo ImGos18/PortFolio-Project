@@ -1,0 +1,142 @@
+/*Media query para tablet y telefono*/
+@media screen and (max-width: 990px) {
+  /* Seccion de presentacion */
+  .presentacion {
+    width: 100%;
+    .titulo-presentacion {
+      margin-top: 100px;
+      text-align: center;
+    }
+    .texto-presentacion {
+      margin-top: 5%;
+      width: 90%;
+      padding: 0px 10px 0px 10px;
+    }
+    .iconos {
+      .lista-resumen {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+        &:last-child {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  /*Info Laboral*/
+  .experiencia-laboral {
+    .intro-experiencia {
+      .descripcion-experiencia {
+        margin-top: 5%;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+      }
+    }
+    .contenedor-info-profesional {
+      display: flex;
+      flex-direction: column;
+      .trabajos-previos {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        .resumen-trabajos {
+          overflow-y: visible;
+          max-height: 100%;
+          li {
+            width: 90vw;
+            .contenedor-trabajo {
+              .proyecto-img {
+                width: 90%;
+                border-radius: 20px;
+              }
+            }
+          }
+        }
+      }
+      .educacion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .proyectos-cualidades {
+        .lista-cualidades {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin: 0;
+          .item-cualidades {
+            width: 90vw;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+
+  /*Gaming*/
+  .gaming {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    .gaming-contenedor {
+      .gaming-descripcion {
+        display: flex;
+        flex-direction: column;
+        i {
+          align-self: center;
+        }
+        .lista-consolas {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+  /*Motociclismo*/
+  .motociclismo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+    align-items: center;
+    .moto-contenedor {
+      width: 90%;
+      margin: 0;
+      .moto-descripcion {
+        display: flex;
+        flex-direction: column;
+        i {
+          align-self: center;
+        }
+        .lista-moto {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+
+  /*Contacto*/
+  .contacto {
+    text-align: center;
+    p {
+      padding: 20px;
+    }
+    .lista-contacto {
+      padding: 0;
+      gap: 15px;
+      li {
+        margin: 0;
+      }
+    }
+  }
+
+  /*Footer*/
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+}

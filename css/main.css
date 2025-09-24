@@ -1,0 +1,568 @@
+/*Reset y estilos Globales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #fafafa;
+}
+
+body,
+html {
+  background-color: #0d0d0d;
+}
+
+/*Clases de ayuda*/
+.logo-lg {
+  font-size: 2rem;
+}
+
+.margin-md {
+  margin-bottom: 1.5rem;
+}
+
+/*Header*/
+.header-barra {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15%;
+  background-color: #0a0c0e;
+  align-items: center;
+  width: 100%;
+}
+.header-barra .logo {
+  width: 70px;
+  height: 70px;
+}
+
+.nav-bars ul {
+  display: flex;
+}
+.nav-bars li {
+  list-style: none;
+  display: block;
+  margin: 20px 20px;
+  transition: all 600ms ease;
+  cursor: pointer;
+}
+.nav-bars li:hover {
+  transform: translateY(-5px);
+  color: #fafafa;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fafafa, 0 0 30px #fafafa, 0 0 40px #fafafa;
+}
+.nav-bars a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+#offcanvasDarkNavbar {
+  background-color: rgba(10, 10, 10, 0.5882352941);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/*Presentacion*/
+.presentacion {
+  background-image: url("../../img/wallhaven-yq769k_1920x1080.png");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.presentacion .titulo-presentacion {
+  color: #fafafa;
+  margin-top: 30px;
+  margin-bottom: 2%;
+}
+.presentacion .texto-presentacion {
+  color: #fafafa;
+  width: 50vw;
+}
+.presentacion .iconos .lista-resumen {
+  color: #0d0d0d;
+  list-style: none;
+  display: flex;
+  margin-top: 5%;
+}
+.presentacion .iconos .lista-resumen .item-resumen {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: rgba(0, 0, 0, 0) 1px solid;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #262626;
+  cursor: default;
+}
+
+/*Experiencia Laboral*/
+.experiencia-laboral {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100vw;
+}
+.experiencia-laboral .intro-experiencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+.experiencia-laboral .intro-experiencia .descripcion-experiencia {
+  width: 50vw;
+  display: inline-block;
+}
+.experiencia-laboral .contenedor-info-profesional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos {
+  width: 80%;
+  padding-left: 0%;
+  min-height: 0;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .icono-descripcion {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .icono-descripcion p {
+  margin-bottom: 0;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos {
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
+  max-height: 700px;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li {
+  display: block;
+  background-color: #0a0a0a;
+  width: 100%;
+  border: 1px solid #262626;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 30px;
+  width: 100%;
+  padding-top: 15px;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .proyecto-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .descripcion-proyecto p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo a i {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .empresa {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 1;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .empresa span {
+  color: gray;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .fecha {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 20px;
+  gap: 10px;
+  align-items: center;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .fecha i {
+  font-size: 1.2rem;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .fecha p {
+  margin-bottom: 0;
+}
+.experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .ubicacion {
+  align-self: self-end;
+  display: flex;
+  gap: 15px;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion {
+  justify-self: start;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .icono-descripcion {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .icono-descripcion p {
+  margin-bottom: 0;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .lenguajes .lista-lenguajes {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .lenguajes .lista-lenguajes .nombre-lenguaje {
+  margin-right: 20px;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .contenedor-estudio {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 30px;
+  width: 100%;
+  padding-top: 15px;
+  width: 90%;
+  border: 1px solid #262626;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .contenedor-estudio .escuela-tiempo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 1;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .contenedor-estudio .escuela-tiempo span {
+  color: gray;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .contenedor-estudio .escuela-tiempo .fecha {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 20px;
+  gap: 10px;
+  align-items: center;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .contenedor-estudio .escuela-tiempo .fecha p {
+  margin-bottom: 0;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .descarga-cv {
+  margin-top: 50px;
+  width: 90%;
+  display: flex;
+  text-decoration: none;
+}
+.experiencia-laboral .contenedor-info-profesional .educacion .descarga-cv button {
+  flex-basis: 100%;
+}
+.experiencia-laboral .contenedor-info-profesional .proyectos-cualidades {
+  margin-top: 2rem;
+  width: 100vw;
+  grid-column: span 2;
+}
+.experiencia-laboral .contenedor-info-profesional .proyectos-cualidades .lista-cualidades {
+  display: grid;
+  list-style: none;
+  padding-left: 0;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  gap: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.experiencia-laboral .contenedor-info-profesional .proyectos-cualidades .lista-cualidades .item-cualidades {
+  background-color: #0a0a0a;
+  border: 1px solid #262626;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+.experiencia-laboral .contenedor-info-profesional .proyectos-cualidades .lista-cualidades .item-cualidades h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  justify-self: center;
+}
+
+/*Gaming*/
+.gaming {
+  background-color: #0a0a0a;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.gaming .gaming-contenedor {
+  width: 80%;
+  justify-self: center;
+  margin-left: 10%;
+}
+.gaming .gaming-contenedor .gaming-descripcion i {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.gaming .gaming-contenedor .gaming-descripcion .consolas .lista-consolas {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gaming .gaming-contenedor .gaming-descripcion .consolas .lista-consolas .nombre-consola {
+  margin-right: 20px;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.gaming .gaming-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.gaming .gaming-image .img-element {
+  width: 80%;
+  border-radius: 20px;
+}
+
+/*Motociclismo*/
+.motociclismo {
+  background-color: #0d0d0d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding-top: 8rem;
+}
+.motociclismo .moto-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.motociclismo .moto-image .img-element {
+  width: 60%;
+  border-radius: 20px;
+}
+.motociclismo .moto-contenedor {
+  width: 80%;
+  justify-self: center;
+  margin-right: 10%;
+}
+.motociclismo .moto-contenedor .moto-descripcion {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 10%;
+}
+.motociclismo .moto-contenedor .moto-descripcion i {
+  display: inline-block;
+  margin-bottom: 2rem;
+  align-self: end;
+}
+.motociclismo .moto-contenedor .moto-descripcion .motos .lista-moto {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.motociclismo .moto-contenedor .moto-descripcion .motos .lista-moto .nombre-moto {
+  margin-right: 20px;
+  border: 1px solid #262626;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/*Contacto*/
+.contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0a0a;
+  align-items: center;
+  padding-top: 5rem;
+}
+.contacto .lista-contacto {
+  list-style: none;
+  display: flex;
+}
+.contacto .lista-contacto .contacto-item {
+  margin-left: 3rem;
+  border: 1px solid #262626;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+.contacto .lista-contacto .contacto-item a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.contacto .lista-contacto .contacto-item:hover {
+  background-color: #262626;
+}
+
+/*Footer*/
+.pie-de-pagina {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #262626;
+}
+
+/*Media query para tablet y telefono*/
+@media screen and (max-width: 990px) {
+  /* Seccion de presentacion */
+  .presentacion {
+    width: 100%;
+  }
+  .presentacion .titulo-presentacion {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .presentacion .texto-presentacion {
+    margin-top: 5%;
+    width: 90%;
+    padding: 0px 10px 0px 10px;
+  }
+  .presentacion .iconos .lista-resumen {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .presentacion .iconos .lista-resumen:last-child {
+    flex-basis: 100%;
+  }
+  /*Info Laboral*/
+  .experiencia-laboral .intro-experiencia .descripcion-experiencia {
+    margin-top: 5%;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+  }
+  .experiencia-laboral .contenedor-info-profesional {
+    display: flex;
+    flex-direction: column;
+  }
+  .experiencia-laboral .contenedor-info-profesional .trabajos-previos {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+  .experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos {
+    overflow-y: visible;
+    max-height: 100%;
+  }
+  .experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li {
+    width: 90vw;
+  }
+  .experiencia-laboral .contenedor-info-profesional .trabajos-previos .resumen-trabajos li .contenedor-trabajo .proyecto-img {
+    width: 90%;
+    border-radius: 20px;
+  }
+  .experiencia-laboral .contenedor-info-profesional .educacion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .experiencia-laboral .contenedor-info-profesional .proyectos-cualidades .lista-cualidades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  .experiencia-laboral .contenedor-info-profesional .proyectos-cualidades .lista-cualidades .item-cualidades {
+    width: 90vw;
+    align-self: center;
+  }
+  /*Gaming*/
+  .gaming {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  .gaming .gaming-contenedor .gaming-descripcion {
+    display: flex;
+    flex-direction: column;
+  }
+  .gaming .gaming-contenedor .gaming-descripcion i {
+    align-self: center;
+  }
+  .gaming .gaming-contenedor .gaming-descripcion .lista-consolas {
+    flex-wrap: wrap;
+  }
+  /*Motociclismo*/
+  .motociclismo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 3rem;
+    align-items: center;
+  }
+  .motociclismo .moto-contenedor {
+    width: 90%;
+    margin: 0;
+  }
+  .motociclismo .moto-contenedor .moto-descripcion {
+    display: flex;
+    flex-direction: column;
+  }
+  .motociclismo .moto-contenedor .moto-descripcion i {
+    align-self: center;
+  }
+  .motociclismo .moto-contenedor .moto-descripcion .lista-moto {
+    flex-wrap: wrap;
+  }
+  /*Contacto*/
+  .contacto {
+    text-align: center;
+  }
+  .contacto p {
+    padding: 20px;
+  }
+  .contacto .lista-contacto {
+    padding: 0;
+    gap: 15px;
+  }
+  .contacto .lista-contacto li {
+    margin: 0;
+  }
+  /*Footer*/
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

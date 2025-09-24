@@ -1,0 +1,45 @@
+@use "../utilidades" as *;
+
+/*Header*/
+
+.header-barra {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15%;
+  background-color: $colorSecundario;
+  align-items: center;
+  width: 100%;
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.nav-bars {
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    display: block;
+    margin: 20px 20px;
+    transition: all 600ms ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      color: $colorTexto;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fafafa, 0 0 30px #fafafa,
+        0 0 40px #fafafa;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $colorTexto;
+  }
+}
+#offcanvasDarkNavbar {
+  background-color: #0a0a0a96;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

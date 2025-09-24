@@ -1,0 +1,164 @@
+@use "../utilidades" as *;
+/*Experiencia Laboral*/
+
+.experiencia-laboral {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100vw;
+  .intro-experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+    .descripcion-experiencia {
+      width: 50vw;
+      display: inline-block;
+    }
+  }
+  .contenedor-info-profesional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    .trabajos-previos {
+      width: 80%;
+      padding-left: 0%;
+      min-height: 0;
+      .icono-descripcion {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .resumen-trabajos {
+        list-style: none;
+        padding-left: 0;
+        overflow-y: scroll;
+        max-height: 700px;
+        li {
+          @include item-lista();
+          .contenedor-trabajo {
+            @include contenedor-lista();
+            .proyecto-img {
+              width: 100%;
+              border-radius: 20px;
+            }
+            .descripcion-proyecto p {
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+            a {
+              @include botones-redireccion();
+              i {
+                @include botones-redireccion();
+              }
+            }
+            .empresa {
+              @include texto-empresa();
+              span {
+                color: gray;
+              }
+            }
+            .fecha {
+              @include texto-antiguedad();
+              i {
+                font-size: 1.2rem;
+              }
+              p {
+                margin-bottom: 0;
+              }
+            }
+            .ubicacion {
+              @include texto-ubicacion();
+            }
+          }
+        }
+      }
+    }
+    .educacion {
+      justify-self: start;
+      .icono-descripcion {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+        }
+      }
+      .lenguajes {
+        .lista-lenguajes {
+          @include lista-horizontal();
+          .nombre-lenguaje {
+            @include item-lista-horizontal();
+          }
+        }
+      }
+      .contenedor-estudio {
+        @include contenedor-lista();
+        width: 90%;
+        border: 1px solid $colorTerciario;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        .escuela-tiempo {
+          @include texto-empresa();
+          span {
+            color: gray;
+          }
+          .fecha {
+            @include texto-antiguedad();
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .descarga-cv {
+        margin-top: 50px;
+        width: 90%;
+        display: flex;
+        text-decoration: none;
+        button {
+          flex-basis: 100%;
+        }
+      }
+    }
+    .proyectos-cualidades {
+      margin-top: 2rem;
+      width: 100vw;
+      grid-column: span 2;
+      .lista-cualidades {
+        display: grid;
+        list-style: none;
+        padding-left: 0;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        gap: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        .item-cualidades {
+          background-color: $colorListaTrabajos;
+          border: 1px solid $colorTerciario;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          align-content: center;
+          border-radius: 10px;
+          padding: 20px;
+          width: 100%;
+
+          h2 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            justify-self: center;
+          }
+        }
+      }
+    }
+  }
+}

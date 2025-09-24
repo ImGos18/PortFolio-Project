@@ -1,0 +1,30 @@
+@use "../utilidades" as *;
+
+/*Contacto*/
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorListaTrabajos;
+  align-items: center;
+  padding-top: 5rem;
+  .lista-contacto {
+    list-style: none;
+    display: flex;
+    .contacto-item {
+      margin-left: 3rem;
+      border: 1px solid $colorTerciario;
+      padding: 10px;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 500ms ease;
+      a {
+        text-decoration: none;
+        color: $colorTexto;
+      }
+      &:hover {
+        background-color: $colorTerciario;
+      }
+    }
+  }
+}

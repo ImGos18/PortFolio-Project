@@ -1,0 +1,34 @@
+@use "../utilidades" as *;
+/*Motociclismo*/
+.motociclismo {
+  @include contenedor-2-col($colorPrimario);
+  padding-top: 8rem;
+  .moto-image {
+    @include img-seccion-2-col-contenedor();
+    .img-element {
+      @include img-seccion-2-col("60%");
+    }
+  }
+  .moto-contenedor {
+    @include contenedor-descripcion-icono("right");
+    .moto-descripcion {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      gap: 10%;
+      i {
+        display: inline-block;
+        margin-bottom: 2rem;
+        align-self: end;
+      }
+      .motos {
+        .lista-moto {
+          @include lista-horizontal();
+          .nombre-moto {
+            @include item-lista-horizontal();
+          }
+        }
+      }
+    }
+  }
+}
