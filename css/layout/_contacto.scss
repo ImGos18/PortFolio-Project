@@ -21,9 +21,11 @@
       a {
         text-decoration: none;
         color: $colorTexto;
+        cursor: pointer;
       }
       &:hover {
         background-color: $colorTerciario;
+        cursor: pointer;
       }
     }
   }

@@ -12,6 +12,7 @@
   .logo {
     width: 70px;
     height: 70px;
+    cursor: pointer;
   }
 }
 
@@ -31,11 +32,13 @@
       color: $colorTexto;
       text-shadow: 0 0 10px #fff, 0 0 20px #fafafa, 0 0 30px #fafafa,
         0 0 40px #fafafa;
+      cursor: pointer;
     }
   }
   a {
     text-decoration: none;
     color: $colorTexto;
+    cursor: pointer;
   }
 }
 #offcanvasDarkNavbar {
