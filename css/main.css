@@ -70,7 +70,7 @@ html {
 
 /*Presentacion*/
 .presentacion {
-  background-image: url("../../img/wallhaven-yq769k_1920x1080.png");
+  background-image: url("../../img/wallhaven-yq769k_1920x1080comprimida.jpg");
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   height: 100vh;
@@ -429,6 +429,9 @@ html {
 .contacto .lista-contacto .contacto-item a {
   text-decoration: none;
   color: #fafafa;
+  cursor: pointer;
+}
+.contacto .lista-contacto .contacto-item a i {
   cursor: pointer;
 }
 .contacto .lista-contacto .contacto-item:hover {
