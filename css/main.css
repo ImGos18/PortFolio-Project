@@ -506,6 +506,15 @@ html {
     flex-direction: column;
     align-items: center;
   }
+  .experiencia-laboral .contenedor-info-profesional .educacion .lenguajes .lista-lenguajes {
+    justify-content: center;
+  }
+  .experiencia-laboral .contenedor-info-profesional .educacion .lenguajes .lista-lenguajes .nombre-lenguaje {
+    margin-right: 0;
+  }
+  .experiencia-laboral .contenedor-info-profesional .educacion .descarga-cv {
+    margin-top: 10px;
+  }
   .experiencia-laboral .contenedor-info-profesional .proyectos-cualidades .lista-cualidades {
     display: flex;
     flex-direction: column;
